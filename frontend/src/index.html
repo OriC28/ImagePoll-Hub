@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/output.css" />
     <title>Document</title>
   </head>
-  <body>
-    <h1 class="text-2xl text-green-500 text-center">Testing...</h1>
+  <body class="h-screen  grid grid-rows-[auto_1fr]">
+    <header class="bg-amber-100 ">
+      <h1 class="text-3xl p-4 font-bold">IMAGEN POLL HUB</h1>
+    </header>
+
+    <main class="bg-green-100 grid grid-rows-3 md:grid-rows-2 md:grid-cols-4 lg:grid-rows-2 lg:grid-cols-4 gap-4 p-4 h-screen">
+      <!-- IMAGE GALLERY CONTAINER -->
+      <section class="bg-red-100 md:col-span-4 lg:col-span-4 rounded-2xl">
+        <div>
+          <img src="" alt="">
+        </div>
+        
+      </section>
+      <!-- FEEDBACK FORM CONTAINER -->
+      <section class="bg-blue-100 md:col-span-2 lg:col-span-2 rounded-2xl">
+        <h2>Envía tu opinión sobre tu imagen favorita</h2>
+      </section>
+      <!-- FEEDBACKS CONTAINER -->
+      <section class="bg-pink-100 md:col-span-2 lg:col-span-2 rounded-2xl flex flex-col p-3 gap-2 overflow-y-scroll">
+        <h2 class="text-2xl font-bold self-center">Opiniones</h2>
+        <!-- FEEDBACK CARD -->
+        <div class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg">
+          <div class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5">
+            <p class="text-lg" >Opinión: Tailwind CSS works by scanning all of your HTML files</p>
+            <div>
+            <p class="text-sm">Usuario: Oriana</p>
+            <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img class=" object-cover rounded-lg md:h-[180px] lg:h-[180px]" src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg" alt="foto">
+          </div>
+        </div>
+        <div class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg">
+          <div class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5">
+            <p class="text-lg" >Opinión: Tailwind CSS works by scanning all of your HTML files</p>
+            <div>
+            <p class="text-sm">Usuario: Oriana</p>
+            <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img class=" object-cover rounded-lg md:h-[180px] lg:h-[180px]" src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg" alt="foto">
+          </div>
+        </div>
+        <div class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg">
+          <div class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5">
+            <p class="text-lg" >Opinión: Tailwind CSS works by scanning all of your HTML files</p>
+            <div>
+            <p class="text-sm">Usuario: Oriana</p>
+            <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img class=" object-cover rounded-lg md:h-[180px] lg:h-[180px]" src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg" alt="foto">
+          </div>
+        </div>
+        <div class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg">
+          <div class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5">
+            <p class="text-lg" >Opinión: Tailwind CSS works by scanning all of your HTML files</p>
+            <div>
+            <p class="text-sm">Usuario: Oriana</p>
+            <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img class=" object-cover rounded-lg md:h-[180px] lg:h-[180px]" src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg" alt="foto">
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
