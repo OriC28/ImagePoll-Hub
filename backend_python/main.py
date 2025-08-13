@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers.images import router
+from routers import images, opinions
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -14,7 +14,8 @@ app.add_middleware(
     allow_headers=["*"],
 ) """
 
-app.include_router(router)
+app.include_router(images.router)
+app.include_router(opinions.router)
 
 
 @app.get("/")
