@@ -1,18 +1,21 @@
 
 export const validateId = (id) => {
-    if(validator.isEmpty(id)){
-        return {isValid: false, message: "El id es requerido."};
-    }
     if(!validator.isInt(id, {min: 1})){
-        return {isValid: false, message: "El id debe ser un entero mayor a 0."};
+        return {isValid: false, message: "El id debe ser un número entero mayor a 0."};
     }
     return {isValid: true};
 }
 
-export const validateUsername = (username) => {
-    if(validator.isEmpty(username)){
-        return {isValid: false, message: "El nombre de usuario es requerido."};
+export const validateAllEmpty = (data) => {
+    const {image_id, username, message} = data;
+    if(validator.isEmpty(image_id) || validator.isEmpty(username) || validator.isEmpty(message)){
+        return {isValid: false, message: "Todos los campos son requeridos."};
     }
+    return {isValid: true};
+}
+
+
+export const validateUsername = (username) => {
     if(validator.matches(username, /^[0-9.+-]+$/g)){
         return {isValid: false, message: "El nombre de usuario no puede ser numérico."};
     }
@@ -27,9 +30,6 @@ export const validateUsername = (username) => {
 }
 
 export const validateMessage = (msg) => {
-     if(validator.isEmpty(msg)){
-        return {isValid: false, message: "El mensaje es requerido."};
-    }
     if(validator.matches(msg, /^[0-9.+-]+$/g)){
         return {isValid: false, message: "El mensaje no puede ser numérico."};
     }

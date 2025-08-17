@@ -20,7 +20,7 @@ def get_all_opinion_to(image_id: int):
     return session.query(Opinion).filter(Opinion.image_id == image_id).all()
 
 def get_opinions():
-    return session.query(Opinion).all()
+    return session.query(Opinion).order_by(Opinion.created_at.desc()).all()
 
 def save_opinion(image_id: int, username: str, message: str):
     if not get_image_by_id(image_id):

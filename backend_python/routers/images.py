@@ -4,11 +4,13 @@ import services
 router = APIRouter(
     prefix="/images", tags=["images"], responses={404: {"message": "No encontrado."}})
 
-
 @router.get("/")
 async def get_all_images():
     return services.get_images()
 
+@router.get("/{image_id}")
+async def get_image_by_id(image_id: int):
+    return services.get_image_by_id(image_id)
 
 @router.post("/votes/{image_id}")
 async def create_vote_to(image_id: int):
