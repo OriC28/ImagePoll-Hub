@@ -6,27 +6,167 @@
     <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/opinions.js" type="module"></script>
+    <script src="js/slider.js" type="module"></script>
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/output.css" />
     <title>Document</title>
   </head>
-  <body class="h-screen grid grid-rows-[auto_1fr]">
+  <body class="min-h-screen bg-gray-100">
     <header class="bg-amber-100">
-      <h1 class="text-3xl p-4 font-bold">IMAGEN POLL HUB</h1>
+      <h1 class="text-xl p-4 font-bold">IMAGEN POLL HUB</h1>
     </header>
 
     <main
-      class="bg-green-100 grid grid-rows-3 md:grid-rows-2 md:grid-cols-4 lg:grid-rows-2 lg:grid-cols-4 gap-4 p-4 h-screen"
+      class="bg-green-100 grid grid-rows-3 md:grid-rows-2 md:grid-cols-4 lg:grid-rows-2 lg:grid-cols-4 gap-4 p-4"
     >
       <!-- IMAGE GALLERY CONTAINER -->
-      <section class="bg-red-100 md:col-span-4 lg:col-span-4 rounded-2xl">
-        <div>
-          <img src="" alt="" />
+      <section
+        class="bg-red-100 md:col-span-4 lg:col-span-4 rounded-2xl p-4 flex justify-center items-center"
+      >
+        <div class="slider variable-width responsive w-full h-auto">
+          <div class="flex flex-col p-3">
+            <img
+              class=""
+              src="https://wallpapers.com/images/hd/vertical-pictures-d8n9viqi1q14gwj2.jpg"
+              width="140px"
+              height="140px"
+              alt=""
+            />
+            <div class="flex flex-col p-3 items-center justify-center">
+              <h3>Title:</h3>
+              <small>Id: </small>
+              <button
+                class="border-0 text-white bg-blue-900 p-2 rounded-2xl w-full cursor-pointer"
+              >
+                Votar
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col p-3">
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1564754943164-e83c08469116?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmVydGljYWx8ZW58MHx8MHx8fDA%3D"
+              width="140px"
+              height="140px"
+              alt=""
+            />
+            <div class="flex flex-col p-3 items-center justify-center">
+              <h3>Title:</h3>
+              <small>Id: </small>
+              <button
+                class="border-0 text-white bg-blue-900 p-2 rounded-2xl w-full cursor-pointer"
+              >
+                Votar
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col p-3">
+            <img
+              class=""
+              src="https://wallpapers.com/images/hd/vertical-monitor-0qus6iabsq82rgx6.jpg"
+              width="140px"
+              height="140px"
+              alt=""
+            />
+            <div class="flex flex-col p-3 items-center justify-center">
+              <h3>Title:</h3>
+              <small>Id: </small>
+              <button
+                class="border-0 text-white bg-blue-900 p-2 rounded-2xl w-full cursor-pointer"
+              >
+                Votar
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col p-3">
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1541028466927-aa1205f96603?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhpZ2glMjByZXMlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D"
+              width="140px"
+              height="140px"
+              alt=""
+            />
+            <div class="flex flex-col p-3 items-center justify-center">
+              <h3>Title:</h3>
+              <small>Id: </small>
+              <button
+                class="border-0 text-white bg-blue-900 p-2 rounded-2xl w-full cursor-pointer"
+              >
+                Votar
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col p-3">
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1501963917309-56546c33e19d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvcXVlYXIlMjBwYW50YWxsYXxlbnwwfHwwfHx8MA%3D%3D"
+              width="140px"
+              height="140px"
+              alt=""
+            />
+            <div class="flex flex-col p-3 items-center justify-center">
+              <h3>Title:</h3>
+              <small>Id: </small>
+              <button
+                class="border-0 text-white bg-blue-900 p-2 rounded-2xl w-full cursor-pointer"
+              >
+                Votar
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col p-3">
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmVydGljYWx8ZW58MHx8MHx8fDA%3D"
+              width="140px"
+              height="140px"
+              alt=""
+            />
+            <div class="flex flex-col p-3 items-center justify-center">
+              <h3>Title:</h3>
+              <small>Id: </small>
+              <button
+                class="border-0 text-white bg-blue-900 p-2 rounded-2xl w-full cursor-pointer"
+              >
+                Votar
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col p-3">
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1512850183-6d7990f42385?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmVydGljYWx8ZW58MHx8MHx8fDA%3D"
+              width="140px"
+              height="140px"
+              alt=""
+            />
+            <div class="flex flex-col p-3 items-center justify-center">
+              <h3>Title:</h3>
+              <small>Id: </small>
+              <button
+                class="border-0 text-white bg-blue-900 p-2 rounded-2xl w-full cursor-pointer"
+              >
+                Votar
+              </button>
+            </div>
+          </div>
         </div>
       </section>
+
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+
       <!-- FEEDBACK FORM CONTAINER -->
       <section
-        class="bg-blue-100 md:col-span-2 lg:col-span-2 rounded-2xl flex flex-col p-3 overflow-y-auto scrollnone"
+        class="bg-blue-100 md:col-span-2 lg:col-span-2 rounded-2xl flex flex-col p-3 overflow-y-auto scrollnone h-[400px]"
       >
         <h2 class="text-2xl font-bold text-center p-2">
           Envía tu opinión sobre tu imagen favorita
@@ -54,7 +194,7 @@
           ></textarea>
           <button
             type="submit"
-            class="bg-amber-500 px-3 py-2 rounded-xl hover:"
+            class="send-button bg-amber-500 px-3 py-2 rounded-xl hover:"
           >
             Enviar
           </button>
@@ -63,10 +203,120 @@
       <!-- FEEDBACKS CONTAINER -->
       <section
         id="feedbacks"
-        class="bg-pink-100 md:col-span-2 lg:col-span-2 rounded-2xl flex flex-col p-3 gap-2 overflow-y-auto scrollnone"
+        class="bg-pink-100 md:col-span-2 lg:col-span-2 rounded-2xl flex flex-col p-3 gap-2 overflow-y-auto scrollnone h-[400px]"
       >
         <h2 class="text-2xl font-bold self-center p-2">Opiniones</h2>
         <!-- FEEDBACK CARD -->
+        <div
+          class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg"
+        >
+          <div
+            class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5"
+          >
+            <p class="text-lg">
+              Opinión: Tailwind CSS works by scanning all of your HTML files
+            </p>
+            <div>
+              <p class="text-sm">Usuario: Oriana</p>
+              <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img
+              class="object-cover rounded-lg md:h-[180px] lg:h-[180px]"
+              src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg"
+              alt="foto"
+            />
+          </div>
+        </div>
+        <div
+          class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg"
+        >
+          <div
+            class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5"
+          >
+            <p class="text-lg">
+              Opinión: Tailwind CSS works by scanning all of your HTML files
+            </p>
+            <div>
+              <p class="text-sm">Usuario: Oriana</p>
+              <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img
+              class="object-cover rounded-lg md:h-[180px] lg:h-[180px]"
+              src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg"
+              alt="foto"
+            />
+          </div>
+        </div>
+        <div
+          class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg"
+        >
+          <div
+            class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5"
+          >
+            <p class="text-lg">
+              Opinión: Tailwind CSS works by scanning all of your HTML files
+            </p>
+            <div>
+              <p class="text-sm">Usuario: Oriana</p>
+              <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img
+              class="object-cover rounded-lg md:h-[180px] lg:h-[180px]"
+              src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg"
+              alt="foto"
+            />
+          </div>
+        </div>
+        <div
+          class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg"
+        >
+          <div
+            class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5"
+          >
+            <p class="text-lg">
+              Opinión: Tailwind CSS works by scanning all of your HTML files
+            </p>
+            <div>
+              <p class="text-sm">Usuario: Oriana</p>
+              <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img
+              class="object-cover rounded-lg md:h-[180px] lg:h-[180px]"
+              src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg"
+              alt="foto"
+            />
+          </div>
+        </div>
+        <div
+          class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg"
+        >
+          <div
+            class="flex flex-col justify-between min-w-2/3 md:w-4/5 lg:w-4/5"
+          >
+            <p class="text-lg">
+              Opinión: Tailwind CSS works by scanning all of your HTML files
+            </p>
+            <div>
+              <p class="text-sm">Usuario: Oriana</p>
+              <p class="text-sm">20/20/2020</p>
+            </div>
+          </div>
+          <div class="flex justify-center min-w-1/3 md:w-1/5 lg:w-1/5">
+            <img
+              class="object-cover rounded-lg md:h-[180px] lg:h-[180px]"
+              src="https://i.pinimg.com/736x/f7/ad/28/f7ad28b5636166fbdec96e55e92b45b1.jpg"
+              alt="foto"
+            />
+          </div>
+        </div>
         <div
           class="bg-purple-500 flex flex-row justify-between p-2 content-center rounded-lg"
         >

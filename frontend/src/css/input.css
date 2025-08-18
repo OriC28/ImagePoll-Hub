@@ -5,7 +5,7 @@
 body{
   font-family: "Rowdies", sans-serif;
 }
-button {
+.send-button {
   font-size: 18px;
   display: inline-block;
   outline: 0;
@@ -22,12 +22,12 @@ button {
   transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
-button:hover {
+.send-button:hover {
   box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
   transform: translateY(-0.1em);
 }
 
-button:active {
+.send-button:active {
   box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
   transform: translateY(0em);
 }
@@ -36,4 +36,41 @@ button:active {
 }
 .scrollnone{
   scrollbar-width: none; /* Firefox */
+}
+
+.slick-prev {
+  position: absolute; 
+  left: 15px;     
+  top: 170px;         
+  transform: translateY(-50%); 
+  z-index: 1;     
+}
+
+.slick-next {
+  position: absolute;
+  right: 15px;    
+  top: 170px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%; 
+}
+
+.slick-prev {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23fff' d='M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23fff' d='M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
 }
